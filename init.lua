@@ -659,12 +659,19 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
+        sql = { 'sql_formatter' },
         -- Conform can also run multiple formatters sequentially
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
       },
     },
+    config = function(_, opts)
+      require('conform').setup(opts)
+      require('conform').formatters.sql_formatter = {
+        prepend_args = { '-c', vim.fn.expand '~/.config/nvim/sql_formatter.json' },
+      }
+    end,
   },
 
   { -- Autocompletion
