@@ -243,6 +243,7 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.gitsigns', -- adds gitsigns recommend keymaps
   require 'plugins.which-key',
+  require 'plugins.markdown-preview',
 
   { -- Autoformat
     'stevearc/conform.nvim',
