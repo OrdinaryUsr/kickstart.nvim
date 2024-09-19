@@ -165,20 +165,8 @@ return { -- LSP Plugins
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        ruff = {},
-        pyright = {
-          settings = {
-            pyright = {
-              disableOrganizeImports = true, -- Using Ruff
-            },
-            python = {
-              analysis = {
-                ignore = { '*' }, -- Using Ruff
-                -- typeCheckingMode = 'off', -- Using mypy
-              },
-            },
-          },
-        },
+        -- ruff = {},
+        pyright = {},
         -- clangd = {},
         -- gopls = {},
         -- rust_analyzer = {},
