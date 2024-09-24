@@ -243,6 +243,7 @@ require('lazy').setup({
   require 'plugins.lsp',
   require 'plugins.lint',
   require 'plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'plugins.toggleterm',
   require 'plugins.which-key',
   require 'plugins.colorscheme',
   require 'plugins.neo-tree',
