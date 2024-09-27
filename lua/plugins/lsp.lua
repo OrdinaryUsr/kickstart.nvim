@@ -92,15 +92,15 @@ return { -- LSP Plugins
           map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 
           map('<leader>dc', function()
-            require('telescope.builtin').lsp_document_symbols { symbols = { 'class' } }
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'class' }, symbol_width = 40 }
           end, '[D]ocument [C]lasses')
 
           map('<leader>dm', function()
-            require('telescope.builtin').lsp_document_symbols { symbols = { 'class', 'method' } }
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'class', 'method' }, symbol_width = 40 }
           end, '[D]ocument [M]ethods')
 
           map('<leader>df', function()
-            require('telescope.builtin').lsp_document_symbols { symbols = { 'function' } }
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'function' }, symbol_width = 40 }
           end, '[D]ocument [F]unctions')
 
           -- Fuzzy find all the symbols in your current workspace.
