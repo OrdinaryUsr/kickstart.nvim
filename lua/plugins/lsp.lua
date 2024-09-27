@@ -91,6 +91,18 @@ return { -- LSP Plugins
           --  Symbols are things like variables, functions, types, etc.
           map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 
+          map('<leader>dc', function()
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'class' } }
+          end, '[D]ocument [C]lasses')
+
+          map('<leader>dm', function()
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'class', 'method' } }
+          end, '[D]ocument [M]ethods')
+
+          map('<leader>df', function()
+            require('telescope.builtin').lsp_document_symbols { symbols = { 'function' } }
+          end, '[D]ocument [F]unctions')
+
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
           map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
