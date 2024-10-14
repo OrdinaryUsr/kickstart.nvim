@@ -8,6 +8,9 @@ return {
         markdown = { 'markdownlint' },
         dockerfile = { 'hadolint' },
         json = { 'jsonlint' },
+        javascript = { 'eslint_d' },
+        typescript = { 'eslint_d' },
+        -- python = { 'pylint' },
         -- python = { 'ruff' },
       }
 
