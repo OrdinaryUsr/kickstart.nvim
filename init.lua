@@ -249,6 +249,7 @@ require('lazy').setup({
   require 'plugins.colorscheme',
   require 'plugins.neo-tree',
   require 'plugins.markdown-preview',
+  require 'plugins.tmux', -- tmux integration
 
   { -- Autoformat
     'stevearc/conform.nvim',
