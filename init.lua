@@ -250,6 +250,7 @@ require('lazy').setup({
   require 'plugins.neo-tree',
   require 'plugins.markdown-preview',
   require 'plugins.tmux', -- tmux integration
+  require 'plugins.harpoon',
 
   { -- Autoformat
     'stevearc/conform.nvim',
