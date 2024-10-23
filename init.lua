@@ -258,6 +258,7 @@ require('lazy').setup({
   require 'plugins.markdown-preview',
   require 'plugins.tmux', -- tmux integration
   require 'plugins.harpoon',
+  require 'plugins.git-conflict',
 
   { -- Autoformat
     'stevearc/conform.nvim',
