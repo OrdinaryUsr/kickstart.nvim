@@ -173,7 +173,7 @@ vim.opt.scrolloff = 15
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Save current neovim session
-vim.keymap.set('n', '<leader>S', '<cmd>mksession!<CR>', { desc = 'Save neovim [S]ession' })
+vim.keymap.set('n', '<leader>S', '<cmd>mksession! | echo "Neovim session saved"<CR>', { desc = 'Save neovim [S]ession' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
