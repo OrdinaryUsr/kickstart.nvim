@@ -20,6 +20,8 @@ return {
         width = 25,
         mappings = {
           ['\\'] = 'close_window',
+          ['v'] = 'open_vsplit',
+          ['s'] = 'open_split',
         },
       },
       filtered_items = {
