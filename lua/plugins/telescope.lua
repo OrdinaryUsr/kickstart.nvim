@@ -63,7 +63,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
       pickers = {
         find_files = {
           hidden = true,
-          file_ignore_patterns = { '.git/' },
+          file_ignore_patterns = { '.git/', '.venv/' },
         },
       },
       extensions = {
