@@ -16,10 +16,6 @@ return { -- You can easily change to a different colorscheme.
     vim.cmd.hi 'Comment gui=none'
   end,
   opts = {
-    dim_inactive = true,
-    on_colors = function(colors)
-      -- colors.bg_dark = '#24283b'
-      colors.bg_dark = '#1a1b26'
-    end,
+    transparent = true,
   },
 }
