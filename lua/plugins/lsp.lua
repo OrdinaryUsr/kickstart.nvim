@@ -179,7 +179,7 @@ return { -- LSP Plugins
       local servers = {
         -- ruff = {},
         pyright = {},
-        tsserver = {},
+        ts_ls = {},
         -- clangd = {},
         -- gopls = {},
         -- rust_analyzer = {},
